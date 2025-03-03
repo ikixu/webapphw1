@@ -1,0 +1,310 @@
+:root {
+    --text-color: #1a1c20;
+    --link-color: #ffffff;
+    --background-color: #b4b4b4;
+    font-size: 17px; /* Set the base font size */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem; /* Adjust this value based on the height of your nav bar */
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    background-color: var(--background-color);
+}
+
+p {
+    font-weight: bold;
+}
+
+nav {
+    background-color: #6D7895;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3.125rem;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+nav .topnav {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+nav .topnav a {
+    color: var(--text-color);
+    font-family: 'Alata';
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0.625rem;
+}
+
+nav .topnav a:hover {
+    color: var(--link-color);
+    transition: color 0.3s ease-in-out;
+}
+
+header {
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+section {
+    padding: 8rem 2rem;
+    min-height: 80vh; /* Reduce the default minimum height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+section h2 {
+    font-family: 'Alata';
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background-color: #6D7895; /* underline color */
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+#about {
+    background-image:url(avengers-silhouette-logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1350px 504px;
+}
+#about .intro {
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+    max-width: 56.25rem;
+    background-color: #ffffff38;
+}
+
+#about .address {
+    text-shadow: 0 0 3px #ffffff;
+}
+
+#about button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #d7dbd8;
+    border-radius: 0.25rem;
+    background-color: #6D7895;
+    color: #1a1c20;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#about button:hover {
+    background-color: #414859;
+    color: #ffffff;
+}
+
+#faculty img {
+    float: left;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+td {
+    font-weight: bold;
+    align-items: center;
+}
+
+ul {
+    text-align: left;
+    color:#234d99
+}
+ul li:nth-child(even) {
+    color:#c44040
+}
+li:hover {
+    background-color: rgba(256,256,256,0.1);
+}
+
+#application {
+    width: 100%;
+    max-width: 800px; /* Ensure it doesn't stretch beyond this */
+    margin: 0 auto; /* Center it properly */
+    text-align: center;
+    overflow: hidden; /* Prevent unexpected overflows */
+    padding: 3rem 2rem;
+    
+}
+
+#application h2 {
+    font-size: 3rem; /* Default size for larger screens */
+    font-weight: 700;
+    text-align: center;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin: 0 auto;
+}
+
+#application p {
+    font-size: 1.25rem;
+    color: #555;
+    max-width: 600px;
+    line-height: 1.6;
+}
+/*application*/
+#application form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+} 
+
+#application form input {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #d7dbd8;
+    border-radius: 0.25rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#application form textarea {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #d7dbd8;
+    border-radius: 0.25rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#application form button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #d7dbd8;
+    border-radius: 0.25rem;
+    background-color: #6D7895;
+    color: #1a1c20;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#application button:hover {
+    background-color: #414859;
+    color: #ffffff;
+}
+
+footer {
+    background-color: #6D7895;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.875rem;
+}
+
+#email {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto; 
+    text-align: center;
+    overflow: hidden; 
+    padding: 3rem 2rem;
+    
+}
+
+#email h2 {
+    font-size: 3rem; 
+    font-weight: 700;
+    text-align: center;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin: 0 auto;
+}
+
+#email p {
+    font-size: 1.25rem;
+    color: #555;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+#email form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+} 
+
+#email form input {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #d7dbd8;
+    border-radius: 0.25rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#email form textarea {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #d7dbd8;
+    border-radius: 0.25rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#email form button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #d7dbd8;
+    border-radius: 0.25rem;
+    background-color: #6D7895;
+    color: #1a1c20;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#email button:hover {
+    background-color: #414859;
+    color: #ffffff;
+}
